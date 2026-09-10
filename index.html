@@ -3,38 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแนะนำตัวของเยาวดี</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FF6699;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+
+    <title>My Portfolio | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 👋</h1>
-        <p>สวัสดีค่ะ! ฉันชื่อ <strong>เยาวดี (Yaowadee)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese Program</p>
-        <p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            MyPortfolio.
+        </a>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="index.html" class="active">หน้าแรก</a>
+            </li>
+
+            <li>
+                <a href="about.html">เกี่ยวกับฉัน</a>
+            </li>
+
+            <li>
+                <a href="skills.html">ทักษะ</a>
+            </li>
+
+            <li>
+                <a href="projects.html">ผลงาน</a>
+            </li>
+
+            <li>
+                <a href="contact.html">ติดต่อ</a>
+            </li>
+        </ul>
+
+        <button id="themeButton">🌙</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+<section class="home">
+
+    <div class="home-text">
+
+        <p class="hello">
+            👋 สวัสดีครับ ผมชื่อ
+        </p>
+
+        <h1>
+            ชื่อของคุณ
+        </h1>
+
+        <h2>
+            Web Developer
+        </h2>
+
+        <p>
+            ผมเป็นนักพัฒนาเว็บไซต์ที่สนใจในการออกแบบ
+            และพัฒนาเว็บไซต์ที่สวยงาม ใช้งานง่าย
+            และตอบโจทย์ผู้ใช้งาน
+        </p>
+
+        <div class="home-buttons">
+
+            <a href="about.html" class="btn primary">
+                รู้จักฉัน
+            </a>
+
+            <a href="projects.html" class="btn secondary">
+                ดูผลงาน
+            </a>
+
+        </div>
+
     </div>
 
-         <!-- ปุ่มกดกลับหน้าแรก -->
-        <a href="portfolio.html" class="btn"> ไปที่หน้าแฟ้มสะสมผลงาน</a>
+
+    <div class="profile">
+
+        <div class="profile-circle">
+            👨‍💻
+        </div>
+
     </div>
+
+</section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 ชื่อของคุณ | My Portfolio</p>
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
