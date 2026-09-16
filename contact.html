@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,46 +8,50 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>ติดต่อ - Yaowadee</title>
+    <title>ติดต่อ</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
 
     <!-- =========================
-         เมนูด้านบน
+         เมนู
          ========================= -->
-    <nav class="navbar">
 
-        <a href="index.html">🩵 หน้าแรก</a>
+    <nav class="top-menu">
 
-        <a href="about.html">👧🏻 เกี่ยวกับฉัน</a>
+        <a href="index.html">
+            🩵 หน้าแรก
+        </a>
 
-        <a href="activity.html">📖 กิจกรรม</a>
+        <a href="about.html">
+            👧🏻 เกี่ยวกับฉัน
+        </a>
 
-        <a href="contact.html">📞 ติดต่อ</a>
+        <a href="activity.html">
+            📖 กิจกรรม
+        </a>
+
+        <a href="contact.html" class="active">
+            📞 ติดต่อ
+        </a>
 
     </nav>
 
 
 
-    <!-- =========================
-         หน้าติดต่อ
-         ========================= -->
-    <main class="contact-page">
+    <main class="main-container">
+
+        <section class="main-card contact-card">
 
 
-        <section class="contact-card">
+            <!-- หัวข้อ -->
 
-
-            <h1 class="pink-title">
-
-                ช่องทางการติดต่อ 📞
-
+            <h1>
+                ✦ ช่องทางการติดต่อ 📞 ✦
             </h1>
 
 
@@ -59,37 +64,81 @@
 
 
             <!-- =========================
-                 ช่องทางการติดต่อ
+                 ช่องทางติดต่อ
                  ========================= -->
-            <div class="contact-info">
+
+            <div class="contact-grid">
 
 
-                <p>
-                    📸 Instagram :
-                    <strong>sunpfrnq</strong>
-                </p>
+                <div class="contact-item">
+
+                    <span>📸</span>
+
+                    <div>
+
+                        <small>
+                            Instagram
+                        </small>
+
+                        <strong>
+                            sunpfrnq
+                        </strong>
+
+                    </div>
+
+                </div>
 
 
-                <p>
-                    💬 Line ID :
-                    <strong>yaowadee2008</strong>
-                </p>
+
+                <div class="contact-item">
+
+                    <span>💬</span>
+
+                    <div>
+
+                        <small>
+                            Line ID
+                        </small>
+
+                        <strong>
+                            yaowadee2008
+                        </strong>
+
+                    </div>
+
+                </div>
 
 
-                <p>
-                    📱 093-6599038
-                </p>
+
+                <div class="contact-item">
+
+                    <span>📱</span>
+
+                    <div>
+
+                        <small>
+                            Phone
+                        </small>
+
+                        <strong>
+                            093-6599038
+                        </strong>
+
+                    </div>
+
+                </div>
 
 
             </div>
 
 
 
-            <!-- ช่องใส่รูปภาพ 1 รูป -->
-            <div class="contact-image">
+            <!-- รูป 1 รูป -->
+
+            <div class="contact-picture">
 
                 <img src="contact.jpg"
-                     alt="รูปภาพติดต่อ">
+                     alt="รูปภาพของเยาวดี">
 
             </div>
 
@@ -99,15 +148,14 @@
     </main>
 
 
+    <div class="bottom-bar"></div>
+
 
     <footer>
-
-        <p>
-            © 2026 Yaowadee Portfolio
-        </p>
-
+        © 2026 Yaowadee Portfolio
     </footer>
 
 
 </body>
+
 </html>
