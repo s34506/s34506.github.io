@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,64 +8,67 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>ผลงานและกิจกรรม - Yaowadee</title>
+    <title>ผลงานและกิจกรรม</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
 
     <!-- =========================
-         เมนูด้านบน
+         เมนู
          ========================= -->
-    <nav class="navbar">
 
-        <a href="index.html">🩵 หน้าแรก</a>
+    <nav class="top-menu">
 
-        <a href="about.html">👧🏻 เกี่ยวกับฉัน</a>
+        <a href="index.html">
+            🩵 หน้าแรก
+        </a>
 
-        <a href="activity.html">📖 กิจกรรม</a>
+        <a href="about.html">
+            👧🏻 เกี่ยวกับฉัน
+        </a>
 
-        <a href="contact.html">📞 ติดต่อ</a>
+        <a href="activity.html" class="active">
+            📖 กิจกรรม
+        </a>
+
+        <a href="contact.html">
+            📞 ติดต่อ
+        </a>
 
     </nav>
 
 
 
-    <!-- =========================
-         หน้าผลงาน
-         ========================= -->
-    <main class="activity-page">
+    <main class="main-container">
+
+        <section class="main-card activity-card">
 
 
-        <section class="activity-card">
+            <!-- หัวข้อ -->
 
-
-            <!-- หัวข้อหลัก -->
-            <h1 class="blue-title">
-
-                ผลงานของดิฉัน
-
+            <h1>
+                ✦ ผลงานของดิฉัน ✦
             </h1>
 
 
 
-            <!-- หัวข้อย่อย -->
-            <h2 class="activity-heading">
+            <div class="pink-section">
 
-                กิจกรรมเกี่ยวกับด้านภาษาจีน 🇨🇳
+                <h2>
+                    🇨🇳 กิจกรรมเกี่ยวกับด้านภาษาจีน
+                </h2>
 
-            </h2>
+            </div>
 
 
 
-            <!-- =========================
-                 รูปกิจกรรมหลัก
-                 ========================= -->
-            <div class="activity-main-image">
+            <!-- รูปกิจกรรมใหญ่ -->
+
+            <div class="activity-picture">
 
                 <img src="chinese-main.jpg"
                      alt="กิจกรรมภาษาจีน">
@@ -73,7 +77,7 @@
 
 
 
-            <h2>
+            <h2 class="activity-name">
 
                 กิจกรรมร้องเพลงประสานเสียง
                 ในวันตรุษจีนของโรงเรียน 2026 🧧
@@ -83,47 +87,34 @@
 
 
             <!-- =========================
-                 รูป 5 รูปในบรรทัดเดียว
+                 รูป 5 รูป
                  ========================= -->
+
             <div class="activity-gallery">
 
-                <div class="activity-image">
-
+                <div>
                     <img src="activity1.jpg"
-                         alt="กิจกรรมภาษาจีน 1">
-
+                         alt="กิจกรรม 1">
                 </div>
 
-
-                <div class="activity-image">
-
+                <div>
                     <img src="activity2.jpg"
-                         alt="กิจกรรมภาษาจีน 2">
-
+                         alt="กิจกรรม 2">
                 </div>
 
-
-                <div class="activity-image">
-
+                <div>
                     <img src="activity3.jpg"
-                         alt="กิจกรรมภาษาจีน 3">
-
+                         alt="กิจกรรม 3">
                 </div>
 
-
-                <div class="activity-image">
-
+                <div>
                     <img src="activity4.jpg"
-                         alt="กิจกรรมภาษาจีน 4">
-
+                         alt="กิจกรรม 4">
                 </div>
 
-
-                <div class="activity-image">
-
+                <div>
                     <img src="activity5.jpg"
-                         alt="กิจกรรมภาษาจีน 5">
-
+                         alt="กิจกรรม 5">
                 </div>
 
             </div>
@@ -131,26 +122,26 @@
 
 
             <!-- คำอธิบาย -->
-            <div class="activity-description">
+
+            <div class="info-box">
 
                 <p>
-
                     อันนี้เป็นกิจกรรมต่าง ๆ
                     ทั้งออกบูธภาษาจีน
                     เข้าร่วมงานวันตรุษจีน
                     และค่ายภาษาจีนต่าง ๆ ค่ะ
-
                 </p>
 
             </div>
 
 
 
-            <!-- ไปหน้าติดต่อ -->
-            <a href="contact.html"
-               class="cute-button">
+            <!-- ปุ่ม -->
 
-                ช่องทางการติดต่อ 📞
+            <a href="contact.html"
+               class="next-button">
+
+                ช่องทางการติดต่อ 📞 →
 
             </a>
 
@@ -160,15 +151,14 @@
     </main>
 
 
+    <div class="bottom-bar"></div>
+
 
     <footer>
-
-        <p>
-            © 2026 Yaowadee Portfolio
-        </p>
-
+        © 2026 Yaowadee Portfolio
     </footer>
 
 
 </body>
+
 </html>
