@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,43 +8,57 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>เกี่ยวกับฉัน - Yaowadee</title>
+    <title>เกี่ยวกับฉัน</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
 
     <!-- =========================
-         เมนูด้านบน
+         เมนู
          ========================= -->
-    <nav class="navbar">
 
-        <a href="index.html">🩵 หน้าแรก</a>
+    <nav class="top-menu">
 
-        <a href="about.html">👧🏻 เกี่ยวกับฉัน</a>
+        <a href="index.html">
+            🩵 หน้าแรก
+        </a>
 
-        <a href="activity.html">📖 กิจกรรม</a>
+        <a href="about.html" class="active">
+            👧🏻 เกี่ยวกับฉัน
+        </a>
 
-        <a href="contact.html">📞 ติดต่อ</a>
+        <a href="activity.html">
+            📖 กิจกรรม
+        </a>
+
+        <a href="contact.html">
+            📞 ติดต่อ
+        </a>
 
     </nav>
 
 
 
-    <!-- =========================
-         เนื้อหาเกี่ยวกับฉัน
-         ========================= -->
-    <main class="about-page">
+    <main class="main-container">
 
-        <section class="about-card">
+        <section class="main-card about-card">
 
 
-            <!-- ช่องใส่รูป -->
-            <div class="about-image">
+            <!-- หัวข้อ -->
+
+            <h1>
+                ✦ มารู้จักกับดิฉันกันค่ะ 👧🏻 ✦
+            </h1>
+
+
+
+            <!-- รูป -->
+
+            <div class="profile-picture">
 
                 <img src="about.jpg"
                      alt="รูปภาพของเยาวดี">
@@ -51,14 +66,10 @@
             </div>
 
 
-            <!-- หัวข้อ -->
-            <h1 class="pink-title">
-                มารู้จักกับดิฉันกันค่ะ 👧🏻
-            </h1>
 
+            <!-- ข้อมูล -->
 
-            <!-- ข้อมูลส่วนตัว -->
-            <div class="about-text">
+            <div class="info-box">
 
                 <p>
                     ดิฉันชื่อ นางสาวเยาวดี ดวงดารา
@@ -84,43 +95,50 @@
 
 
             <!-- =========================
-                 มหาวิทยาลัยที่สนใจ
+                 มหาวิทยาลัย
                  ========================= -->
-            <div class="university-box">
+
+            <div class="section-box">
 
                 <h2>
-                    มหาลัยที่สนใจ 🎓
+                    🎓 มหาลัยที่สนใจ
                 </h2>
 
-                <ul>
 
-                    <li>
+                <div class="interest-grid">
+
+                    <div>
+                        🏫
                         มหาวิทยาลัยบูรพา
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
+                        📦
                         คณะโลจิสติกส์
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
+                        📚
                         คณะมนุษยศาสตร์และสังคมศาสตร์
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
+                        👩🏻‍🏫
                         คณะศึกษาศาสตร์
-                    </li>
+                    </div>
 
-                </ul>
+                </div>
 
             </div>
 
 
 
-            <!-- ไปหน้ากิจกรรม -->
-            <a href="activity.html"
-               class="cute-button">
+            <!-- ปุ่ม -->
 
-                ผลงานและกิจกรรม 📖
+            <a href="activity.html"
+               class="next-button">
+
+                ผลงานและกิจกรรม 📖 →
 
             </a>
 
@@ -130,15 +148,14 @@
     </main>
 
 
+    <div class="bottom-bar"></div>
+
 
     <footer>
-
-        <p>
-            © 2026 Yaowadee Portfolio
-        </p>
-
+        © 2026 Yaowadee Portfolio
     </footer>
 
 
 </body>
+
 </html>
