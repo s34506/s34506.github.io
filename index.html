@@ -4,113 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio | Home</title>
+    <title>Portfolio - Yaowadee</title>
 
+    <!-- เชื่อมไฟล์ CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
 </head>
 
 <body>
 
-<header>
+    <!-- =========================
+         เมนูด้านบนเว็บไซต์
+         ========================= -->
     <nav class="navbar">
 
-        <a href="index.html" class="logo">
-            MyPortfolio.
-        </a>
+        <a href="index.html">🩵 หน้าแรก</a>
 
-        <ul class="nav-menu">
-            <li>
-                <a href="index.html" class="active">หน้าแรก</a>
-            </li>
+        <a href="about.html">👧🏻 เกี่ยวกับฉัน</a>
 
-            <li>
-                <a href="about.html">เกี่ยวกับฉัน</a>
-            </li>
+        <a href="activity.html">📖 กิจกรรม</a>
 
-            <li>
-                <a href="skills.html">ทักษะ</a>
-            </li>
-
-            <li>
-                <a href="projects.html">ผลงาน</a>
-            </li>
-
-            <li>
-                <a href="contact.html">ติดต่อ</a>
-            </li>
-        </ul>
-
-        <button id="themeButton">🌙</button>
+        <a href="contact.html">📞 ติดต่อ</a>
 
     </nav>
-</header>
 
 
-<main>
+    <!-- =========================
+         ส่วนหน้าแรก
+         ========================= -->
+    <main class="home">
 
-<section class="home">
+        <div class="home-card">
 
-    <div class="home-text">
+            <h1>
+                Welcome to Portfolio Yaowadee
+            </h1>
 
-        <p class="hello">
-            👋 สวัสดีครับ ผมชื่อ
-        </p>
 
-        <h1>
-            ชื่อของคุณ
-        </h1>
+            <!-- ช่องใส่รูปภาพ -->
+            <div class="profile-frame">
 
-        <h2>
-            Web Developer
-        </h2>
+                <img src="profile.jpg"
+                     alt="รูปภาพของเยาวดี">
+
+            </div>
+
+
+            <div class="intro-text">
+
+                <p class="hello">
+                    สวัสดีค่ะ
+                </p>
+
+                <p>
+                    ดิฉัน นางสาวเยาวดี ดวงดารา
+                </p>
+
+                <p>
+                    นี่คือ Portfolio ของดิฉันค่ะ
+                    รวบรวมผลงาน และเรื่องราวต่าง ๆ ค่ะ 👧🏻
+                </p>
+
+            </div>
+
+
+            <!-- ปุ่มไปหน้า About -->
+            <a href="about.html" class="cute-button">
+                มารู้จักฉันกัน 💗
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         ส่วนท้ายเว็บไซต์
+         ========================= -->
+    <footer>
 
         <p>
-            ผมเป็นนักพัฒนาเว็บไซต์ที่สนใจในการออกแบบ
-            และพัฒนาเว็บไซต์ที่สวยงาม ใช้งานง่าย
-            และตอบโจทย์ผู้ใช้งาน
+            © 2026 Yaowadee Portfolio
         </p>
 
-        <div class="home-buttons">
-
-            <a href="about.html" class="btn primary">
-                รู้จักฉัน
-            </a>
-
-            <a href="projects.html" class="btn secondary">
-                ดูผลงาน
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="profile">
-
-        <div class="profile-circle">
-            👨‍💻
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<footer>
-    <p>© 2026 ชื่อของคุณ | My Portfolio</p>
-</footer>
-
-
-<script src="script.js"></script>
+    </footer>
 
 </body>
 </html>
