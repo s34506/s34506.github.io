@@ -1,0 +1,743 @@
+/* =========================================
+   YAOWADEE PORTFOLIO
+   ========================================= */
+
+
+/* -------------------------
+   ตั้งค่าพื้นฐาน
+   ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Tahoma,
+        sans-serif;
+
+    background: #eee4f5;
+
+    color: #62546a;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* =========================================
+   เมนูด้านบน
+   ========================================= */
+
+.top-menu {
+
+    width: 100%;
+
+    min-height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e4d6eb;
+
+}
+
+
+.top-menu a {
+
+    text-decoration: none;
+
+    color: #72577e;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.top-menu a:hover {
+
+    background: #ead6f0;
+
+}
+
+
+.top-menu a.active {
+
+    background: #dcb4e9;
+
+    color: #ffffff;
+
+}
+
+
+
+/* =========================================
+   พื้นที่เว็บไซต์
+   ========================================= */
+
+.main-container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 25px;
+
+}
+
+
+
+/* =========================================
+   กล่องหลัก
+   ========================================= */
+
+.main-card {
+
+    width: 100%;
+
+    background: #fffafa;
+
+    border: 1px solid #ead8e9;
+
+    border-radius: 18px;
+
+    padding: 45px 55px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(110,80,120,0.10);
+
+}
+
+
+
+/* =========================================
+   หัวข้อ
+   ========================================= */
+
+.main-card h1 {
+
+    color: #694b78;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    margin-bottom: 28px;
+
+}
+
+
+.main-card h2 {
+
+    color: #795b83;
+
+    font-size: 20px;
+
+}
+
+
+
+/* =========================================
+   รูปโปรไฟล์
+   ========================================= */
+
+.profile-picture {
+
+    width: 260px;
+
+    height: 260px;
+
+    margin: 0 auto 28px;
+
+    padding: 6px;
+
+    background: #ead2e8;
+
+    border-radius: 15px;
+
+}
+
+
+.profile-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+}
+
+
+
+/* =========================================
+   ข้อความหน้าแรก
+   ========================================= */
+
+.intro-text {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 28px;
+
+}
+
+
+.hello {
+
+    color: #d276a9;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+   ปุ่ม
+   ========================================= */
+
+.next-button {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e18ac1,
+            #a96ac4
+        );
+
+    color: white;
+
+    padding: 10px 27px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 5px 12px rgba(160,90,170,0.20);
+
+    transition: 0.3s;
+
+}
+
+
+.next-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 17px rgba(160,90,170,0.28);
+
+}
+
+
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
+.about-card {
+
+    padding-bottom: 50px;
+
+}
+
+
+.info-box {
+
+    background: #f9edf5;
+
+    border: 1px solid #e7cfe0;
+
+    border-radius: 14px;
+
+    padding: 22px 28px;
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    text-align: left;
+
+    line-height: 2;
+
+}
+
+
+.info-box p {
+
+    margin-bottom: 3px;
+
+}
+
+
+
+/* =========================================
+   กล่องมหาวิทยาลัย
+   ========================================= */
+
+.section-box {
+
+    max-width: 760px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background: #f4eaf8;
+
+    border: 1px solid #ddc9e8;
+
+    border-radius: 15px;
+
+}
+
+
+.section-box h2 {
+
+    margin-bottom: 20px;
+
+    color: #694b78;
+
+}
+
+
+.interest-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.interest-grid div {
+
+    background: #fceff7;
+
+    border: 1px solid #ead2e1;
+
+    border-radius: 12px;
+
+    padding: 13px;
+
+    color: #765e79;
+
+}
+
+
+
+/* =========================================
+   ACTIVITY
+   ========================================= */
+
+.activity-card h1 {
+
+    margin-bottom: 25px;
+
+}
+
+
+.pink-section {
+
+    background: #f5dff0;
+
+    border: 1px solid #e6c6df;
+
+    border-radius: 14px;
+
+    padding: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.pink-section h2 {
+
+    color: #765577;
+
+}
+
+
+
+/* =========================================
+   รูปกิจกรรมใหญ่
+   ========================================= */
+
+.activity-picture {
+
+    width: 80%;
+
+    max-width: 650px;
+
+    height: 330px;
+
+    margin: 0 auto 20px;
+
+    padding: 6px;
+
+    background: #ead4e7;
+
+    border-radius: 14px;
+
+}
+
+
+.activity-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+}
+
+
+.activity-name {
+
+    margin: 20px auto;
+
+    max-width: 650px;
+
+}
+
+
+
+/* =========================================
+   รูป 5 รูป
+   ========================================= */
+
+.activity-gallery {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+
+}
+
+
+.activity-gallery div {
+
+    background: #ead5e7;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+}
+
+
+.activity-gallery img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 7px;
+
+}
+
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-intro {
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-grid {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 90px;
+
+    padding: 15px;
+
+    background: #f8eaf5;
+
+    border: 1px solid #e4cde0;
+
+    border-radius: 14px;
+
+    text-align: left;
+
+}
+
+
+.contact-item > span {
+
+    font-size: 25px;
+
+}
+
+
+.contact-item small {
+
+    display: block;
+
+    color: #9a829d;
+
+    font-size: 12px;
+
+}
+
+
+.contact-item strong {
+
+    display: block;
+
+    color: #76527c;
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================
+   รูปหน้าติดต่อ
+   ========================================= */
+
+.contact-picture {
+
+    width: 250px;
+
+    height: 250px;
+
+    margin: 30px auto 0;
+
+    padding: 6px;
+
+    background: #ead4e7;
+
+    border-radius: 15px;
+
+}
+
+
+.contact-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* =========================================
+   แถบสีด้านล่าง
+   ========================================= */
+
+.bottom-bar {
+
+    width: 100%;
+
+    height: 18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d9b4e8,
+            #c89bdd,
+            #d9b4e8
+        );
+
+}
+
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #907b96;
+
+    font-size: 13px;
+
+}
+
+
+
+/* =========================================
+   มือถือ
+   ========================================= */
+
+@media (max-width: 700px) {
+
+
+    .top-menu {
+
+        gap: 3px;
+
+        padding: 10px 5px;
+
+    }
+
+
+    .top-menu a {
+
+        padding: 7px 9px;
+
+        font-size: 11px;
+
+    }
+
+
+    .main-container {
+
+        padding: 30px 12px;
+
+    }
+
+
+    .main-card {
+
+        padding: 35px 18px;
+
+    }
+
+
+    .main-card h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .profile-picture {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+    .interest-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .activity-picture {
+
+        width: 100%;
+
+        height: 250px;
+
+    }
+
+
+    .activity-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
