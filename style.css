@@ -1,29 +1,48 @@
-/* =========================================
+/* ==================================================
    YAOWADEE PORTFOLIO
-   ========================================= */
+   Main Style
+   ================================================== */
 
 
-/* -------------------------
-   ตั้งค่าพื้นฐาน
-   ------------------------- */
+/* ==================================================
+   1. RESET
+   ================================================== */
 
 * {
-    box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
 }
 
 
 body {
 
     font-family:
-        Arial,
+        "Prompt",
         Tahoma,
+        Arial,
         sans-serif;
 
-    background: #eee4f5;
+    color: #6d5a70;
 
-    color: #62546a;
+    background:
+        linear-gradient(
+            135deg,
+            #f8e9f5 0%,
+            #f5eafa 50%,
+            #eaf3fa 100%
+        );
 
     min-height: 100vh;
 
@@ -31,15 +50,37 @@ body {
 
 
 
-/* =========================================
-   เมนูด้านบน
-   ========================================= */
+/* ==================================================
+   2. HEADER
+   ================================================== */
 
-.top-menu {
+.header {
 
     width: 100%;
 
-    min-height: 65px;
+    background: rgba(255,255,255,0.92);
+
+    border-bottom:
+        1px solid #ead8e8;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.navbar {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    min-height: 70px;
 
     display: flex;
 
@@ -47,143 +88,270 @@ body {
 
     align-items: center;
 
-    gap: 10px;
+    gap: 8px;
 
-    padding: 12px 20px;
-
-    background: #ffffff;
-
-    border-bottom: 1px solid #e4d6eb;
+    padding: 10px 20px;
 
 }
 
 
-.top-menu a {
+.nav-link {
 
     text-decoration: none;
 
-    color: #72577e;
-
-    padding: 8px 18px;
-
-    border-radius: 20px;
+    color: #765f7b;
 
     font-size: 14px;
 
-    transition: 0.3s;
+    padding:
+        10px 18px;
+
+    border-radius: 30px;
+
+    transition:
+        0.3s ease;
+
+    white-space: nowrap;
 
 }
 
 
-.top-menu a:hover {
+.nav-link:hover {
 
-    background: #ead6f0;
+    background: #f7dceb;
 
-}
+    color: #c45d91;
 
-
-.top-menu a.active {
-
-    background: #dcb4e9;
-
-    color: #ffffff;
+    transform: translateY(-2px);
 
 }
 
 
+.nav-link.active {
 
-/* =========================================
-   พื้นที่เว็บไซต์
-   ========================================= */
+    background:
+        linear-gradient(
+            135deg,
+            #f3a8ca,
+            #c99ae1
+        );
 
-.main-container {
+    color: white;
+
+    box-shadow:
+        0 5px 15px rgba(200,130,180,0.25);
+
+}
+
+
+
+/* ==================================================
+   3. MAIN CONTAINER
+   ================================================== */
+
+.container {
 
     width: 100%;
 
-    max-width: 900px;
+    max-width: 950px;
 
-    margin: 0 auto;
+    margin: auto;
 
-    padding: 55px 25px;
+    padding:
+        60px 20px;
 
 }
 
 
 
-/* =========================================
-   กล่องหลัก
-   ========================================= */
+/* ==================================================
+   4. CARD
+   ================================================== */
 
-.main-card {
+.home-card,
+.about-card,
+.education-card,
+.activity-card,
+.contact-card {
 
-    width: 100%;
+    background:
+        rgba(255,255,255,0.93);
 
-    background: #fffafa;
+    border:
+        1px solid #ead8e8;
 
-    border: 1px solid #ead8e9;
+    border-radius: 25px;
 
-    border-radius: 18px;
-
-    padding: 45px 55px;
+    padding:
+        50px;
 
     text-align: center;
 
     box-shadow:
-        0 8px 25px rgba(110,80,120,0.10);
+        0 15px 40px
+        rgba(123,91,135,0.12);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* เส้นตกแต่งด้านบน */
+
+.home-card::before,
+.about-card::before,
+.education-card::before,
+.activity-card::before,
+.contact-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f4a8c9,
+            #c6a5e5,
+            #9eddeb
+        );
 
 }
 
 
 
-/* =========================================
-   หัวข้อ
-   ========================================= */
+/* ==================================================
+   5. TITLES
+   ================================================== */
 
-.main-card h1 {
+.main-title {
 
-    color: #694b78;
+    font-family: "Mali", sans-serif;
 
-    font-size: 28px;
+    color: #79557f;
 
-    font-weight: 600;
+    font-size: 42px;
 
-    margin-bottom: 28px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
 
 }
 
 
-.main-card h2 {
+.subtitle {
 
-    color: #795b83;
+    color: #c68aaa;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.page-title {
+
+    font-family: "Mali", sans-serif;
+
+    color: #79557f;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* ==================================================
+   6. IMAGE
+   ================================================== */
+
+.cute-image {
+
+    margin:
+        0 auto 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd8e9,
+            #d8c7ee
+        );
+
+    padding: 7px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+}
+
+
+.cute-image::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: -15px;
+
+    right: -12px;
+
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #fff0a9;
+
+    color: #d982a9;
+
+    border-radius: 50%;
 
     font-size: 20px;
 
+    box-shadow:
+        0 5px 10px rgba(0,0,0,0.08);
+
 }
 
 
+.home-image {
 
-/* =========================================
-   รูปโปรไฟล์
-   ========================================= */
+    width: 280px;
 
-.profile-picture {
+    height: 280px;
+
+}
+
+
+.about-image {
 
     width: 260px;
 
     height: 260px;
 
-    margin: 0 auto 28px;
-
-    padding: 6px;
-
-    background: #ead2e8;
-
-    border-radius: 15px;
-
 }
 
 
-.profile-picture img {
+.cute-image img {
 
     width: 100%;
 
@@ -191,7 +359,7 @@ body {
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 15px;
 
     display: block;
 
@@ -199,110 +367,35 @@ body {
 
 
 
-/* =========================================
-   ข้อความหน้าแรก
-   ========================================= */
+/* ==================================================
+   7. HOME TEXT
+   ================================================== */
 
-.intro-text {
-
-    font-size: 17px;
+.home-text {
 
     line-height: 2;
+
+    font-size: 17px;
 
     margin-bottom: 28px;
 
 }
 
 
-.hello {
+.home-text h2 {
 
-    color: #d276a9;
+    font-family: "Mali", sans-serif;
 
-    font-size: 24px;
+    color: #df79a8;
 
-    font-weight: bold;
+    font-size: 27px;
 
-}
-
-
-
-/* =========================================
-   ปุ่ม
-   ========================================= */
-
-.next-button {
-
-    display: inline-block;
-
-    text-decoration: none;
-
-    background:
-        linear-gradient(
-            90deg,
-            #e18ac1,
-            #a96ac4
-        );
-
-    color: white;
-
-    padding: 10px 27px;
-
-    border-radius: 30px;
-
-    font-size: 15px;
-
-    box-shadow:
-        0 5px 12px rgba(160,90,170,0.20);
-
-    transition: 0.3s;
+    margin-bottom: 5px;
 
 }
 
 
-.next-button:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 17px rgba(160,90,170,0.28);
-
-}
-
-
-
-/* =========================================
-   ABOUT
-   ========================================= */
-
-.about-card {
-
-    padding-bottom: 50px;
-
-}
-
-
-.info-box {
-
-    background: #f9edf5;
-
-    border: 1px solid #e7cfe0;
-
-    border-radius: 14px;
-
-    padding: 22px 28px;
-
-    max-width: 700px;
-
-    margin: 25px auto;
-
-    text-align: left;
-
-    line-height: 2;
-
-}
-
-
-.info-box p {
+.home-text p {
 
     margin-bottom: 3px;
 
@@ -310,121 +403,451 @@ body {
 
 
 
-/* =========================================
-   กล่องมหาวิทยาลัย
-   ========================================= */
+/* ==================================================
+   8. BUTTON
+   ================================================== */
 
-.section-box {
+.pink-button {
 
-    max-width: 760px;
+    display: inline-block;
 
-    margin: 30px auto;
+    text-decoration: none;
 
-    padding: 25px;
+    color: white;
 
-    background: #f4eaf8;
+    background:
+        linear-gradient(
+            135deg,
+            #ee9fc3,
+            #b996d9
+        );
 
-    border: 1px solid #ddc9e8;
+    padding:
+        12px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(190,120,170,0.22);
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.pink-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(190,120,170,0.3);
+
+}
+
+
+
+/* ==================================================
+   9. ABOUT
+   ================================================== */
+
+.yellow-title {
+
+    display: inline-block;
+
+    background: #fff0a8;
+
+    border:
+        3px solid #f4a6c7;
+
+    border-radius: 18px;
+
+    padding:
+        12px 25px;
+
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 0 18px
+        rgba(244,166,199,0.35);
+
+}
+
+
+.yellow-title h1 {
+
+    font-family: "Mali", sans-serif;
+
+    color: #d978a6;
+
+    font-size: 25px;
+
+}
+
+
+.about-content {
+
+    max-width: 780px;
+
+    margin: auto;
+
+    text-align: left;
+
+    background: #fff6fb;
+
+    border:
+        1px solid #f0d9e6;
+
+    border-radius: 18px;
+
+    padding:
+        28px 32px;
+
+    line-height: 2;
+
+    font-size: 16px;
+
+}
+
+
+.about-content p {
+
+    margin-bottom: 15px;
+
+}
+
+
+.thank-you {
+
+    text-align: center;
+
+    color: #d47da5;
+
+    font-weight: 600;
+
+    margin-bottom: 0 !important;
+
+}
+
+
+
+/* ==================================================
+   10. EDUCATION
+   ================================================== */
+
+.education-box {
+
+    max-width: 750px;
+
+    margin:
+        0 auto 35px;
+
+    background: #fff5fa;
+
+    border:
+        1px solid #ecd8e6;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+}
+
+
+.education-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.education-box h2 {
+
+    color: #7c5d83;
+
+    font-family: "Mali", sans-serif;
+
+    font-size: 21px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.education-box p {
+
+    line-height: 2;
+
+}
+
+
+
+/* ==================================================
+   11. BLUE GLOW TITLE
+   ================================================== */
+
+.blue-glow-title {
+
+    display: inline-block;
+
+    background:
+        #b9eff8;
+
+    border:
+        3px solid #82dbea;
+
+    border-radius: 18px;
+
+    padding:
+        13px 28px;
+
+    margin:
+        10px auto 28px;
+
+    box-shadow:
+        0 0 8px #9de8f2,
+        0 0 20px rgba(120,220,235,0.5),
+        0 0 35px rgba(120,220,235,0.25);
+
+}
+
+
+.blue-glow-title h2,
+.blue-glow-title h1 {
+
+    color: #438c9a;
+
+    font-family: "Mali", sans-serif;
+
+}
+
+
+.big-title {
+
+    padding:
+        15px 45px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.big-title h1 {
+
+    font-size: 30px;
+
+}
+
+
+
+/* ==================================================
+   12. UNIVERSITY
+   ================================================== */
+
+.university-card {
+
+    max-width: 650px;
+
+    margin:
+        0 auto 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8edff,
+            #fff5fa
+        );
+
+    border:
+        1px solid #dfcce9;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+}
+
+
+.university-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.university-card h2 {
+
+    color: #76577e;
+
+    font-family: "Mali", sans-serif;
+
+    margin-bottom: 22px;
+
+}
+
+
+.faculty {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #ffffff;
 
     border-radius: 15px;
 
-}
-
-
-.section-box h2 {
-
-    margin-bottom: 20px;
-
-    color: #694b78;
+    padding: 18px;
 
 }
 
 
-.interest-grid {
+.faculty span {
+
+    font-size: 30px;
+
+}
+
+
+.faculty p {
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ==================================================
+   13. ACTIVITY
+   ================================================== */
+
+.chinese-title {
+
+    color: #d477a5;
+
+    font-family: "Mali", sans-serif;
+
+    margin-bottom: 22px;
+
+}
+
+
+.big-activity-image {
+
+    width: 85%;
+
+    max-width: 700px;
+
+    height: 360px;
+
+    margin: 0 auto 25px;
+
+    padding: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4c2d9,
+            #b7dce9
+        );
+
+    border-radius: 20px;
+
+}
+
+
+.big-activity-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+}
+
+
+.activity-name {
+
+    color: #76587e;
+
+    font-family: "Mali", sans-serif;
+
+    font-size: 21px;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+/* ==================================================
+   14. GALLERY
+   5 รูป x 2 แถว
+   ================================================== */
+
+.activity-gallery {
+
+    max-width: 800px;
+
+    margin:
+        0 auto 30px;
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(5, 1fr);
 
     gap: 12px;
 
 }
 
 
-.interest-grid div {
+.gallery-item {
 
-    background: #fceff7;
+    aspect-ratio: 1 / 1;
 
-    border: 1px solid #ead2e1;
+    background: #f5e5f0;
 
-    border-radius: 12px;
+    padding: 5px;
 
-    padding: 13px;
+    border:
+        1px solid #e6cede;
 
-    color: #765e79;
+    border-radius: 13px;
 
-}
-
-
-
-/* =========================================
-   ACTIVITY
-   ========================================= */
-
-.activity-card h1 {
-
-    margin-bottom: 25px;
+    transition: 0.3s;
 
 }
 
 
-.pink-section {
+.gallery-item:hover {
 
-    background: #f5dff0;
+    transform:
+        translateY(-5px);
 
-    border: 1px solid #e6c6df;
-
-    border-radius: 14px;
-
-    padding: 14px;
-
-    margin-bottom: 25px;
+    box-shadow:
+        0 8px 18px
+        rgba(130,90,130,0.15);
 
 }
 
 
-.pink-section h2 {
-
-    color: #765577;
-
-}
-
-
-
-/* =========================================
-   รูปกิจกรรมใหญ่
-   ========================================= */
-
-.activity-picture {
-
-    width: 80%;
-
-    max-width: 650px;
-
-    height: 330px;
-
-    margin: 0 auto 20px;
-
-    padding: 6px;
-
-    background: #ead4e7;
-
-    border-radius: 14px;
-
-}
-
-
-.activity-picture img {
+.gallery-item img {
 
     width: 100%;
 
@@ -434,174 +857,256 @@ body {
 
     border-radius: 9px;
 
-}
-
-
-.activity-name {
-
-    margin: 20px auto;
-
-    max-width: 650px;
-
-}
-
-
-
-/* =========================================
-   รูป 5 รูป
-   ========================================= */
-
-.activity-gallery {
-
-    width: 100%;
-
-    max-width: 760px;
-
-    margin: 25px auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(5, 1fr);
-
-    gap: 10px;
-
-}
-
-
-.activity-gallery div {
-
-    background: #ead5e7;
-
-    padding: 5px;
-
-    border-radius: 10px;
-
-}
-
-
-.activity-gallery img {
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-
     display: block;
 
-    border-radius: 7px;
-
 }
 
 
 
-/* =========================================
-   CONTACT
-   ========================================= */
+/* ==================================================
+   15. ACTIVITY DESCRIPTION
+   ================================================== */
 
-.contact-intro {
+.activity-description {
 
-    font-size: 17px;
+    max-width: 780px;
 
-    margin-bottom: 25px;
+    margin:
+        0 auto 35px;
 
-}
+    padding:
+        23px 28px;
 
+    background: #fff5fa;
 
-.contact-grid {
+    border:
+        1px solid #efd8e5;
 
-    max-width: 700px;
+    border-radius: 18px;
 
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 12px;
-
-}
-
-
-.contact-item {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    min-height: 90px;
-
-    padding: 15px;
-
-    background: #f8eaf5;
-
-    border: 1px solid #e4cde0;
-
-    border-radius: 14px;
+    line-height: 2;
 
     text-align: left;
 
 }
 
 
-.contact-item > span {
+
+/* ==================================================
+   16. SKILL
+   ================================================== */
+
+.skill-section {
+
+    margin-top: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.skill-grid {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.skill-card {
+
+    background:
+        #f8eff8;
+
+    border:
+        1px solid #e4d2e5;
+
+    border-radius: 16px;
+
+    padding:
+        18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+}
+
+
+.skill-card:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.skill-card span {
 
     font-size: 25px;
 
 }
 
 
-.contact-item small {
+.skill-card p {
+
+    line-height: 1.6;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ==================================================
+   17. CONTACT
+   ================================================== */
+
+.contact-intro {
+
+    margin-bottom: 28px;
+
+    font-size: 17px;
+
+}
+
+
+.contact-list {
+
+    max-width: 650px;
+
+    margin:
+        0 auto 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.contact-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #fff3f9;
+
+    border:
+        1px solid #ead5e3;
+
+    border-radius: 17px;
+
+    padding: 18px 25px;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-box:hover {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+.contact-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f6d7e8;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+}
+
+
+.contact-box small {
 
     display: block;
 
-    color: #9a829d;
+    color: #a68da5;
 
     font-size: 12px;
 
+    margin-bottom: 2px;
+
 }
 
 
-.contact-item strong {
+.contact-box strong {
 
     display: block;
 
-    color: #76527c;
+    color: #72567a;
 
-    font-size: 15px;
-
-}
-
-
-
-/* =========================================
-   รูปหน้าติดต่อ
-   ========================================= */
-
-.contact-picture {
-
-    width: 250px;
-
-    height: 250px;
-
-    margin: 30px auto 0;
-
-    padding: 6px;
-
-    background: #ead4e7;
-
-    border-radius: 15px;
+    font-size: 17px;
 
 }
 
 
-.contact-picture img {
+
+/* ==================================================
+   18. CONTACT IMAGE
+   ================================================== */
+
+.contact-image {
+
+    width: 260px;
+
+    height: 260px;
+
+    margin:
+        20px auto 25px;
+
+    padding: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd5e7,
+            #cdb8e6
+        );
+
+    border-radius: 20px;
+
+}
+
+
+.contact-image img {
 
     width: 100%;
 
@@ -609,45 +1114,31 @@ body {
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 14px;
+
+}
+
+
+.contact-end {
+
+    color: #c27d9f;
 
 }
 
 
 
-/* =========================================
-   แถบสีด้านล่าง
-   ========================================= */
-
-.bottom-bar {
-
-    width: 100%;
-
-    height: 18px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #d9b4e8,
-            #c89bdd,
-            #d9b4e8
-        );
-
-}
-
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
+/* ==================================================
+   19. FOOTER
+   ================================================== */
 
 footer {
 
     text-align: center;
 
-    padding: 25px;
+    padding:
+        20px;
 
-    color: #907b96;
+    color: #927c96;
 
     font-size: 13px;
 
@@ -655,53 +1146,83 @@ footer {
 
 
 
-/* =========================================
-   มือถือ
-   ========================================= */
+/* ==================================================
+   20. RESPONSIVE
+   สำหรับโทรศัพท์ / iPad
+   ================================================== */
 
-@media (max-width: 700px) {
-
-
-    .top-menu {
-
-        gap: 3px;
-
-        padding: 10px 5px;
-
-    }
+@media (max-width: 750px) {
 
 
-    .top-menu a {
+    .navbar {
 
-        padding: 7px 9px;
+        overflow-x: auto;
 
-        font-size: 11px;
+        justify-content:
+            flex-start;
+
+        padding:
+            10px;
 
     }
 
 
-    .main-container {
+    .nav-link {
 
-        padding: 30px 12px;
+        font-size: 12px;
 
-    }
-
-
-    .main-card {
-
-        padding: 35px 18px;
+        padding:
+            9px 12px;
 
     }
 
 
-    .main-card h1 {
+    .container {
 
-        font-size: 23px;
+        padding:
+            35px 12px;
 
     }
 
 
-    .profile-picture {
+    .home-card,
+    .about-card,
+    .education-card,
+    .activity-card,
+    .contact-card {
+
+        padding:
+            40px 18px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .main-title {
+
+        font-size: 30px;
+
+    }
+
+
+    .page-title {
+
+        font-size: 25px;
+
+    }
+
+
+    .home-image {
+
+        width: 230px;
+
+        height: 230px;
+
+    }
+
+
+    .about-image {
 
         width: 220px;
 
@@ -710,18 +1231,14 @@ footer {
     }
 
 
-    .interest-grid {
+    .about-content {
 
-        grid-template-columns: 1fr;
+        padding:
+            20px;
 
-    }
+        font-size: 14px;
 
-
-    .activity-picture {
-
-        width: 100%;
-
-        height: 250px;
+        line-height: 1.9;
 
     }
 
@@ -734,9 +1251,112 @@ footer {
     }
 
 
-    .contact-grid {
+    .big-activity-image {
 
-        grid-template-columns: 1fr;
+        width: 100%;
+
+        height: 260px;
+
+    }
+
+
+    .skill-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .faculty {
+
+        flex-direction:
+            column;
+
+        text-align: center;
+
+    }
+
+}
+
+
+
+/* ==================================================
+   21. จอเล็กมาก
+   ================================================== */
+
+@media (max-width: 430px) {
+
+
+    .nav-link {
+
+        font-size: 11px;
+
+        padding:
+            8px 10px;
+
+    }
+
+
+    .main-title {
+
+        font-size: 26px;
+
+    }
+
+
+    .home-image {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+
+    .about-image {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+
+    .yellow-title h1 {
+
+        font-size: 19px;
+
+    }
+
+
+    .blue-glow-title h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .big-title h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .activity-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .contact-image {
+
+        width: 210px;
+
+        height: 210px;
 
     }
 
