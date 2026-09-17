@@ -1132,3 +1132,248 @@ nav a.active::after {
 
 }
 }
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Yaowadee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-chinese">姚</span>
+            <span>YAO</span>
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="active">ABOUT</a>
+            <a href="activities.html">ACTIVITIES</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ABOUT HERO -->
+    <main class="about-page">
+
+        <section class="about-hero">
+
+            <!-- DECORATION -->
+            <div class="about-cloud">☁</div>
+
+            <div class="about-lantern lantern-top">🏮</div>
+
+
+            <!-- LEFT -->
+            <div class="about-intro">
+
+                <p class="about-small">
+                    关于我 · Guān yú wǒ
+                </p>
+
+                <h1>
+                    ABOUT<br>
+                    <span>ME</span>
+                </h1>
+
+                <p class="about-description">
+                    Get to know me,<br>
+                    my story, my passion<br>
+                    and my dreams.
+                </p>
+
+                <div class="gold-line"></div>
+
+                <p class="about-chinese">
+                    一步一步，成为更好的自己
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT PROFILE CARD -->
+            <div class="about-card-area">
+
+                <div class="gold-back"></div>
+
+                <div class="about-card">
+
+                    <div class="chinese-circle">
+                        姚
+                    </div>
+
+                    <div class="profile-photo">
+                        <img src="images/profile.jpg" alt="เยาวดี ดวงดารา">
+                    </div>
+
+                    <h2>
+                        เยาวดี ดวงดารา
+                    </h2>
+
+                    <p class="nickname">
+                        แป้ง · Pang
+                    </p>
+
+                    <div class="card-line"></div>
+
+                    <p class="student">
+                        STUDENT · LANGUAGE · CREATIVE
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DECORATIONS -->
+            <div class="about-lantern lantern-bottom">🏮</div>
+
+            <div class="chinese-decoration">
+                中
+            </div>
+
+        </section>
+
+
+        <!-- PERSONAL INFORMATION -->
+        <section class="about-information">
+
+            <div class="section-heading">
+
+                <p>ABOUT ME</p>
+
+                <h2>
+                    我的故事
+                </h2>
+
+                <span>My Story</span>
+
+            </div>
+
+
+            <div class="story-grid">
+
+                <div class="story-box">
+
+                    <span class="story-number">01</span>
+
+                    <h3>เกี่ยวกับฉัน</h3>
+
+                    <p>
+                        ฉันชื่อเยาวดี ดวงดารา ชื่อเล่นแป้ง
+                        เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
+                        เป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                        และสนใจด้านภาษา โดยเฉพาะภาษาจีน
+                    </p>
+
+                </div>
+
+
+                <div class="story-box">
+
+                    <span class="story-number">02</span>
+
+                    <h3>ความสนใจ</h3>
+
+                    <p>
+                        ฉันสนใจด้านภาษา การสื่อสาร
+                        การทำงานร่วมกับผู้อื่น
+                        และงานสร้างสรรค์
+                        เพราะเชื่อว่าการเรียนรู้จากประสบการณ์
+                        จะช่วยให้เราเติบโตขึ้น
+                    </p>
+
+                </div>
+
+
+                <div class="story-box">
+
+                    <span class="story-number">03</span>
+
+                    <h3>เป้าหมาย</h3>
+
+                    <p>
+                        ฉันต้องการพัฒนาทักษะด้านภาษา
+                        และนำความสามารถของตัวเอง
+                        ไปต่อยอดในการเรียนระดับมหาวิทยาลัย
+                        รวมถึงการทำงานในอนาคต
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="education-section">
+
+            <div class="section-heading">
+
+                <p>EDUCATION</p>
+
+                <h2>
+                    教育经历
+                </h2>
+
+                <span>My Education</span>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-year">
+                    2024<br>
+                    <span>—</span><br>
+                    2026
+                </div>
+
+                <div class="education-content">
+
+                    <h3>
+                        ระดับมัธยมศึกษาตอนปลาย
+                    </h3>
+
+                    <p>
+                        โรงเรียนของฉัน
+                    </p>
+
+                    <p>
+                        แผนการเรียนภาษาจีน
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Yaowadee Duangdara · 姚</p>
+    </footer>
+
+
+</body>
+</html>
