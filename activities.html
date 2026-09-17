@@ -1,214 +1,148 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities | Yaowadee</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>กิจกรรม | Yaowadee</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<nav class="navbar">
 
-    <a href="index.html" class="logo">
-        姚 <span>YAO</span>
-    </a>
+    <div class="logo">
+        <span>Y</span> Yaowadee
+    </div>
 
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="activities.html" class="active">ACTIVITIES</a>
-        <a href="skills.html">SKILLS</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
+    <div class="nav-links">
 
-    <button class="menu-btn">☰</button>
-
-</header>
-
-
-<section class="page">
-
-    <div class="page-title reveal">
-
-        <p>
-            活动 · HUÓDÒNG
-        </p>
-
-        <h1>
-            MY <span>ACTIVITIES</span>
-        </h1>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="about.html">เกี่ยวกับฉัน</a>
+        <a href="activities.html" class="active">กิจกรรม</a>
+        <a href="certificates.html">เกียรติบัตร</a>
+        <a href="goals.html">เป้าหมาย</a>
 
     </div>
 
+</nav>
 
-    <p class="page-intro reveal">
-        Experiences that shaped who I am.
+
+<section class="page-header">
+
+    <span>MY ACTIVITIES 🎨</span>
+
+    <h1>กิจกรรมของฉัน ✨</h1>
+
+    <p>
+        ทุกกิจกรรมคือประสบการณ์ใหม่
+        ที่ทำให้ฉันได้เรียนรู้และเติบโต
     </p>
+
+</section>
+
+
+<section class="activity-section">
 
 
     <div class="activity-grid">
 
 
-        <div class="activity-card reveal">
+        <div class="activity-card">
 
-            <div class="activity-top">
-                <span>01</span>
-                <b>活动</b>
+            <div class="activity-image">
+
+                <img src="images/activity1.jpg" alt="กิจกรรม">
+
+                <span class="number">01</span>
+
             </div>
 
-            <div class="activity-symbol">
-                ✦
+            <div class="activity-content">
+
+                <span>ACTIVITY</span>
+
+                <h2>กิจกรรมที่ 1</h2>
+
+                <p>
+                    เขียนรายละเอียดกิจกรรม
+                    หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
+                </p>
+
+                <button onclick="openModal('กิจกรรมที่ 1','images/activity1.jpg')">
+                    ดูรูปเพิ่มเติม →
+                </button>
+
             </div>
-
-            <h2>
-                กิจกรรมที่ 1
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
 
         </div>
 
 
-        <div class="activity-card reveal">
 
-            <div class="activity-top">
-                <span>02</span>
-                <b>活动</b>
+        <div class="activity-card">
+
+            <div class="activity-image">
+
+                <img src="images/activity2.jpg" alt="กิจกรรม">
+
+                <span class="number">02</span>
+
             </div>
 
-            <div class="activity-symbol">
-                ✧
+            <div class="activity-content">
+
+                <span>ACTIVITY</span>
+
+                <h2>กิจกรรมที่ 2</h2>
+
+                <p>
+                    เขียนรายละเอียดกิจกรรม
+                    หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
+                </p>
+
+                <button onclick="openModal('กิจกรรมที่ 2','images/activity2.jpg')">
+                    ดูรูปเพิ่มเติม →
+                </button>
+
             </div>
-
-            <h2>
-                กิจกรรมที่ 2
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
 
         </div>
 
 
-        <div class="activity-card reveal">
 
-            <div class="activity-top">
-                <span>03</span>
-                <b>活动</b>
+        <div class="activity-card">
+
+            <div class="activity-image">
+
+                <img src="images/activity3.jpg" alt="กิจกรรม">
+
+                <span class="number">03</span>
+
             </div>
 
-            <div class="activity-symbol">
-                福
+            <div class="activity-content">
+
+                <span>ACTIVITY</span>
+
+                <h2>กิจกรรมที่ 3</h2>
+
+                <p>
+                    เขียนรายละเอียดกิจกรรม
+                    หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
+                </p>
+
+                <button onclick="openModal('กิจกรรมที่ 3','images/activity3.jpg')">
+                    ดูรูปเพิ่มเติม →
+                </button>
+
             </div>
-
-            <h2>
-                กิจกรรมที่ 3
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
-
-        </div>
-
-
-        <div class="activity-card reveal">
-
-            <div class="activity-top">
-                <span>04</span>
-                <b>活动</b>
-            </div>
-
-            <div class="activity-symbol">
-                艺
-            </div>
-
-            <h2>
-                กิจกรรมที่ 4
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
-
-        </div>
-
-
-        <div class="activity-card reveal">
-
-            <div class="activity-top">
-                <span>05</span>
-                <b>活动</b>
-            </div>
-
-            <div class="activity-symbol">
-                心
-            </div>
-
-            <h2>
-                กิจกรรมที่ 5
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
-
-        </div>
-
-
-        <div class="activity-card reveal">
-
-            <div class="activity-top">
-                <span>06</span>
-                <b>活动</b>
-            </div>
-
-            <div class="activity-symbol">
-                成
-            </div>
-
-            <h2>
-                กิจกรรมที่ 6
-            </h2>
-
-            <p>
-                ชื่อกิจกรรม
-            </p>
-
-            <small>
-                เขียนรายละเอียดเกี่ยวกับกิจกรรม
-                หน้าที่ที่ได้รับ และสิ่งที่ได้เรียนรู้
-            </small>
 
         </div>
 
@@ -218,9 +152,47 @@
 </section>
 
 
-<script src="script.js"></script>
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModal()">×</button>
+
+        <img id="modalImage">
+
+        <h2 id="modalTitle"></h2>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>Made with 💗 by Yaowadee</p>
+</footer>
+
+
+<script>
+
+function openModal(title, image){
+
+    document.getElementById("modal").style.display = "flex";
+
+    document.getElementById("modalTitle").innerText = title;
+
+    document.getElementById("modalImage").src = image;
+
+}
+
+function closeModal(){
+
+    document.getElementById("modal").style.display = "none";
+
+}
+
+</script>
 
 </body>
 </html>
-
-    
