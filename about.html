@@ -8,57 +8,68 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>เกี่ยวกับฉัน</title>
+    <title>เกี่ยวกับฉัน | Yaowadee</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
 </head>
+
 
 <body>
 
 
-    <!-- =========================
-         เมนู
-         ========================= -->
+    <!-- =================================
+         MENU
+         ================================= -->
 
-    <nav class="top-menu">
+    <header class="header">
 
-        <a href="index.html">
-            🩵 หน้าแรก
-        </a>
+        <nav class="navbar">
 
-        <a href="about.html" class="active">
-            👧🏻 เกี่ยวกับฉัน
-        </a>
+            <a href="index.html" class="nav-link">
+                🩷 หน้าแรก
+            </a>
 
-        <a href="activity.html">
-            📖 กิจกรรม
-        </a>
+            <a href="about.html" class="nav-link active">
+                👧🏻 เกี่ยวกับฉัน
+            </a>
 
-        <a href="contact.html">
-            📞 ติดต่อ
-        </a>
+            <a href="education.html" class="nav-link">
+                📚 การศึกษา
+            </a>
 
-    </nav>
+            <a href="activity.html" class="nav-link">
+                💌 กิจกรรม
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                📞 ติดต่อ
+            </a>
+
+        </nav>
+
+    </header>
 
 
 
-    <main class="main-container">
+    <!-- =================================
+         ABOUT
+         ================================= -->
 
-        <section class="main-card about-card">
+    <main class="container">
 
-
-            <!-- หัวข้อ -->
-
-            <h1>
-                ✦ มารู้จักกับดิฉันกันค่ะ 👧🏻 ✦
-            </h1>
-
+        <section class="about-card">
 
 
             <!-- รูป -->
 
-            <div class="profile-picture">
+            <div class="cute-image about-image">
 
                 <img src="about.jpg"
                      alt="รูปภาพของเยาวดี">
@@ -67,78 +78,59 @@
 
 
 
-            <!-- ข้อมูล -->
+            <!-- หัวข้อสีเหลืองตัดชมพู -->
 
-            <div class="info-box">
+            <div class="yellow-title">
+
+                <h1>
+                    มารู้จักกับดิฉันกันค่ะ 👧🏻
+                </h1>
+
+            </div>
+
+
+
+            <!-- เนื้อหา -->
+
+            <div class="about-content">
 
                 <p>
-                    ดิฉันชื่อ นางสาวเยาวดี ดวงดารา
+                    ดิฉันชื่อสวัสดีค่ะ หนูชื่อเยาวดี ดวงดารา
+                    ชื่อเล่นแป้งค่ะ ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 ค่ะ
                 </p>
 
                 <p>
-                    กำลังศึกษาอยู่ที่โรงเรียนบ้านบึง
-                    "อุตสาหกรรมนุเคราะห์"
+                    หนูเป็นคนที่มีความรับผิดชอบ ชอบวางแผน
+                    และทำงานอย่างเป็นระบบค่ะ อีกอย่างหนึ่งที่หนูสนใจและถนัดคือด้านภาษา
+                    หนูชอบเรียนภาษาและสนุกกับการเรียนรู้คำศัพท์หรือวัฒนธรรมของประเทศต่าง ๆ ค่ะ
                 </p>
 
                 <p>
-                    ระดับมัธยมต้น 1-3
-                    แผนการเรียนภาษาจีน
+                    หนูสนใจคณะโลจิสติกส์ เพราะมองว่าเป็นสาขาที่ไม่ได้เกี่ยวกับการขนส่งเพียงอย่างเดียว
+                    แต่ยังเกี่ยวข้องกับการวางแผน การจัดการ การติดต่อประสานงาน
+                    และการทำงานร่วมกับคนหลายฝ่าย ซึ่งทักษะด้านภาษาสามารถนำมาใช้ในการสื่อสาร
+                    และการทำงานกับคนต่างประเทศได้ค่ะ
                 </p>
 
                 <p>
-                    ระดับมัธยมปลาย 4-6
-                    แผนการเรียนภาษาจีน
+                    หนูจึงอยากเรียนโลจิสติกส์เพื่อพัฒนาทั้งความรู้ด้านการจัดการ
+                    และทักษะด้านภาษา และนำความสามารถทั้งสองด้านมาต่อยอดในการทำงานในอนาคตค่ะ
+                </p>
+
+                <p class="thank-you">
+                    ขอบคุณค่ะ ♡
                 </p>
 
             </div>
 
 
 
-            <!-- =========================
-                 มหาวิทยาลัย
-                 ========================= -->
+            <!-- ปุ่มไปการศึกษา -->
 
-            <div class="section-box">
+            <a href="education.html"
+               class="pink-button">
 
-                <h2>
-                    🎓 มหาลัยที่สนใจ
-                </h2>
-
-
-                <div class="interest-grid">
-
-                    <div>
-                        🏫
-                        มหาวิทยาลัยบูรพา
-                    </div>
-
-                    <div>
-                        📦
-                        คณะโลจิสติกส์
-                    </div>
-
-                    <div>
-                        📚
-                        คณะมนุษยศาสตร์และสังคมศาสตร์
-                    </div>
-
-                    <div>
-                        👩🏻‍🏫
-                        คณะศึกษาศาสตร์
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ปุ่ม -->
-
-            <a href="activity.html"
-               class="next-button">
-
-                ผลงานและกิจกรรม 📖 →
+                ดูประวัติการศึกษา 📚 →
 
             </a>
 
@@ -148,11 +140,13 @@
     </main>
 
 
-    <div class="bottom-bar"></div>
-
 
     <footer>
-        © 2026 Yaowadee Portfolio
+
+        <p>
+            Made with ♡ by Yaowadee
+        </p>
+
     </footer>
 
 
