@@ -779,129 +779,244 @@ nav a.active::after {
     color: white;
 }
 
-
 /* =========================
-   CONTACT
+   CONTACT NEW DESIGN
 ========================= */
 
+.contact-page {
+    min-height: calc(100vh - 82px);
+}
 
-.contact-grid {
+
+.contact-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 65px;
-    align-items: start;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* LEFT */
+
+.contact-intro {
+    position: relative;
 }
 
 
 .contact-symbol {
-    margin-bottom: 15px;
-    color: var(--red);
     font-family: 'Noto Serif SC', serif;
-    font-size: 80px;
-}
-
-
-.contact-info h2 {
-    margin-bottom: 15px;
+    font-size: 90px;
     color: var(--red);
-    font-family: 'Noto Serif SC', serif;
-    font-size: 32px;
-}
-
-
-.contact-info > p {
-    margin-bottom: 35px;
-    color: var(--gray);
-    line-height: 2;
-}
-
-
-.contact-item {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    line-height: 1;
     margin-bottom: 25px;
 }
 
 
-.contact-item > span {
-    width: 45px;
-    height: 45px;
-    border: 1px solid var(--gold);
+.contact-intro h2 {
+    font-family: 'Noto Serif SC', serif;
+    color: var(--red);
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+
+.contact-intro > p {
+    color: var(--gray);
+    line-height: 2;
+    font-size: 15px;
+    max-width: 430px;
+}
+
+
+/* CHINESE QUOTE */
+
+.chinese-quote {
+    margin-top: 40px;
+    padding: 20px 25px;
+    border-left: 3px solid var(--gold);
+    background: rgba(198,154,82,0.08);
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: var(--gold);
-    font-size: 21px;
+    gap: 18px;
 }
 
 
-.contact-item small {
-    color: var(--gold);
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-
-
-.contact-item p {
-    margin-top: 3px;
+.chinese-quote span {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 45px;
     color: var(--red);
 }
 
 
-.contact-form {
-    padding: 40px;
-    background: white;
-    border: 1px solid rgba(117, 29, 43, 0.1);
-}
-
-
-.contact-form h2 {
-    margin-bottom: 30px;
+.chinese-quote p {
     color: var(--red);
-    font-size: 23px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 17px;
 }
 
 
-.contact-form label {
+.chinese-quote small {
     display: block;
-    margin-bottom: 7px;
-    color: #6f5b60;
-    font-size: 13px;
+    color: var(--gray);
+    font-size: 11px;
 }
 
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 13px 15px;
-    border: 1px solid #eadfe0;
-    outline: none;
-    background: var(--cream);
-    color: var(--text);
-    font-size: 14px;
-    resize: vertical;
+/* CONTACT CARDS */
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 25px;
+    background: white;
+    border: 1px solid rgba(117,29,43,0.1);
+    transition: 0.35s;
+}
+
+
+.contact-card:hover {
+    transform: translateX(10px);
     border-color: var(--gold);
+    box-shadow: 0 10px 25px rgba(117,29,43,0.08);
 }
 
 
-.contact-form .gold-btn {
-    width: 100%;
+.contact-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    transition: 0.3s;
 }
 
 
-#formMessage {
-    margin-top: 15px;
+.contact-card:hover .contact-icon {
+    background: var(--red);
+    border-color: var(--red);
+    color: white;
+}
+
+
+.contact-detail {
+    flex: 1;
+}
+
+
+.contact-detail span {
+    display: block;
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+
+.contact-detail h3 {
     color: var(--red);
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
+
+.contact-detail p {
+    margin-top: 3px;
+    color: var(--gray);
+    font-size: 11px;
+}
+
+
+.contact-arrow {
+    color: var(--gold);
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+
+.contact-card:hover .contact-arrow {
+    transform: translateX(5px);
+}
+
+
+/* BOTTOM */
+
+.contact-bottom {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.contact-bottom span {
+    color: var(--gold);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+.red-line {
+    width: 80px;
+    height: 1px;
+    background: var(--gold);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 680px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+
+    .contact-symbol {
+        font-size: 65px;
+    }
+
+
+    .contact-intro h2 {
+        font-size: 28px;
+    }
+
+
+    .contact-card {
+        padding: 18px;
+    }
+
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+    }
+
+
+    .contact-bottom {
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+
+    .red-line {
+        width: 35px;
+    }
+
+}
 
 /* =========================
    ANIMATION
