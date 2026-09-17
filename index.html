@@ -8,55 +8,86 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Welcome to Portfolio Yaowadee</title>
+    <title>Portfolio Yaowadee</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- ฟอนต์ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         เมนูด้านบน
-         ========================= -->
 
-    <nav class="top-menu">
+    <!-- =================================
+         MENU ด้านบน
+         ทุกหน้าจะใช้เหมือนกัน
+         ================================= -->
 
-        <a href="index.html" class="active">
-            🩵 หน้าแรก
-        </a>
+    <header class="header">
 
-        <a href="about.html">
-            👧🏻 เกี่ยวกับฉัน
-        </a>
+        <nav class="navbar">
 
-        <a href="activity.html">
-            📖 กิจกรรม
-        </a>
+            <a href="index.html" class="nav-link active">
+                🩷 หน้าแรก
+            </a>
 
-        <a href="contact.html">
-            📞 ติดต่อ
-        </a>
+            <a href="about.html" class="nav-link">
+                👧🏻 เกี่ยวกับฉัน
+            </a>
 
-    </nav>
+            <a href="education.html" class="nav-link">
+                📚 การศึกษา
+            </a>
+
+            <a href="activity.html" class="nav-link">
+                💌 กิจกรรม
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                📞 ติดต่อ
+            </a>
+
+        </nav>
+
+    </header>
 
 
-    <!-- =========================
-         เนื้อหาหลัก
-         ========================= -->
 
-    <main class="main-container">
+    <!-- =================================
+         เนื้อหาหน้าแรก
+         ================================= -->
 
-        <section class="main-card">
+    <main class="container">
 
-            <h1>
-                ✦ Welcome to Portfolio Yaowadee ✦
+        <section class="home-card">
+
+
+            <!-- หัวข้อ -->
+
+            <h1 class="main-title">
+                Portfolio Yaowadee
             </h1>
 
 
-            <!-- ช่องใส่รูป -->
+            <p class="subtitle">
+                My Portfolio ♡
+            </p>
 
-            <div class="profile-picture">
+
+
+            <!-- =================================
+                 ช่องใส่รูป
+                 เปลี่ยน profile.jpg เป็นรูปของเรา
+                 ================================= -->
+
+            <div class="cute-image home-image">
 
                 <img src="profile.jpg"
                      alt="รูปภาพของเยาวดี">
@@ -64,13 +95,14 @@
             </div>
 
 
+
             <!-- ข้อความ -->
 
-            <div class="intro-text">
+            <div class="home-text">
 
-                <p class="hello">
+                <h2>
                     สวัสดีค่ะ
-                </p>
+                </h2>
 
                 <p>
                     ดิฉัน นางสาวเยาวดี ดวงดารา
@@ -84,28 +116,35 @@
             </div>
 
 
+
             <!-- ปุ่มไปหน้า About -->
 
             <a href="about.html"
-               class="next-button">
+               class="pink-button">
 
-                ไปทำความรู้จักกัน →
-                
+                มาทำความรู้จักกัน ♡
+
             </a>
+
 
         </section>
 
     </main>
 
 
-    <!-- แถบสีด้านล่างเหมือนในตัวอย่าง -->
 
-    <div class="bottom-bar"></div>
-
+    <!-- =================================
+         FOOTER
+         ================================= -->
 
     <footer>
-        © 2026 Yaowadee Portfolio
+
+        <p>
+            Made with ♡ by Yaowadee
+        </p>
+
     </footer>
+
 
 </body>
 
