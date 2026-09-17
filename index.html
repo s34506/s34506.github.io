@@ -3,83 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaowadee | Portfolio</title>
+
+    <title>Portfolio | Yaowadee</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <a href="index.html" class="logo">
-        姚 <span>YAO</span>
-    </a>
+<!-- Floating decorations -->
+<div class="bubble bubble1"></div>
+<div class="bubble bubble2"></div>
+<div class="star">✦</div>
+<div class="star star2">✧</div>
 
-    <nav>
-        <a href="index.html" class="active">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="activities.html">ACTIVITIES</a>
-        <a href="skills.html">SKILLS</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
 
-    <button class="menu-btn">☰</button>
-</header>
+    <div class="logo">
+        <span>Y</span> Yaowadee
+    </div>
 
-<main class="hero">
+    <div class="nav-links">
+        <a href="index.html" class="active">หน้าหลัก</a>
+        <a href="about.html">เกี่ยวกับฉัน</a>
+        <a href="activities.html">กิจกรรม</a>
+        <a href="certificates.html">เกียรติบัตร</a>
+        <a href="goals.html">เป้าหมาย</a>
+    </div>
 
-    <div class="decor-cloud cloud-1">☁</div>
-    <div class="decor-cloud cloud-2">☁</div>
+</nav>
 
-    <div class="lantern lantern-1">🏮</div>
-    <div class="lantern lantern-2">🏮</div>
 
-    <div class="hero-text reveal">
+<!-- HERO -->
+<section class="hero">
 
-        <p class="chinese-title">
-            你好 · Nǐ hǎo
-        </p>
+    <div class="hero-text">
+
+        <div class="hello">
+            ✨ Welcome to my Portfolio
+        </div>
 
         <h1>
-            YAOWADEE
-            <span>PORTFOLIO</span>
+            สวัสดีค่ะ 👋🏻<br>
+            ฉันชื่อ <span>เยาวดี</span>
         </h1>
 
-        <p class="hero-description">
-            Discover my story, experiences<br>
-            and dreams for the future.
+        <p>
+            แฟ้มสะสมผลงานที่รวบรวมตัวตน
+            กิจกรรม ประสบการณ์ และเป้าหมาย
+            ของฉันไว้ในเว็บไซต์เดียว
         </p>
 
-        <a href="about.html" class="gold-btn">
-            EXPLORE MORE →
+        <div class="hero-buttons">
+
+            <a href="about.html" class="btn pink">
+                รู้จักฉันมากขึ้น 💗
+            </a>
+
+            <a href="activities.html" class="btn blue">
+                ดูกิจกรรม ✨
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="image-decoration">♡</div>
+
+        <div class="profile-card">
+
+            <img src="images/profile.jpg" alt="รูปโปรไฟล์">
+
+            <div class="profile-tag">
+                🎀 Yaowadee
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK MENU -->
+
+<section class="quick-section">
+
+    <div class="section-title">
+        <span>Explore</span>
+        <h2>มาทำความรู้จักฉันกัน 🌷</h2>
+    </div>
+
+
+    <div class="menu-grid">
+
+        <a href="about.html" class="menu-card pink-card">
+            <div class="icon">👩🏻‍🎓</div>
+            <h3>เกี่ยวกับฉัน</h3>
+            <p>ประวัติ ตัวตน และการศึกษา</p>
+            <span>ดูเพิ่มเติม →</span>
+        </a>
+
+
+        <a href="activities.html" class="menu-card blue-card">
+            <div class="icon">🎨</div>
+            <h3>กิจกรรม</h3>
+            <p>ประสบการณ์และกิจกรรมที่เข้าร่วม</p>
+            <span>ดูเพิ่มเติม →</span>
+        </a>
+
+
+        <a href="certificates.html" class="menu-card yellow-card">
+            <div class="icon">🏆</div>
+            <h3>เกียรติบัตร</h3>
+            <p>ผลงานและความสำเร็จ</p>
+            <span>ดูเพิ่มเติม →</span>
+        </a>
+
+
+        <a href="goals.html" class="menu-card purple-card">
+            <div class="icon">🎯</div>
+            <h3>เป้าหมาย</h3>
+            <p>ความฝันและอนาคตของฉัน</p>
+            <span>ดูเพิ่มเติม →</span>
         </a>
 
     </div>
 
-    <div class="hero-card reveal">
+</section>
 
-        <div class="profile-circle">
-            <span>姚</span>
-        </div>
 
-        <h2>เยาวดี ดวงดารา</h2>
-
-        <p>แป้ง · Pang</p>
-
-        <div class="gold-line"></div>
-
-        <small>
-            STUDENT · LANGUAGE · CREATIVE
-        </small>
-
-    </div>
-
-</main>
-
-<div class="scroll-text">
-    ↓ SCROLL TO EXPLORE ↓
-</div>
-
-<script src="script.js"></script>
+<footer>
+    <p>Made with 💗 by Yaowadee</p>
+</footer>
 
 </body>
 </html>
