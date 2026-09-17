@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เกียรติบัตร | Yaowadee</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <span>Y</span> Yaowadee
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">หน้าหลัก</a>
+        <a href="about.html">เกี่ยวกับฉัน</a>
+        <a href="activities.html">กิจกรรม</a>
+        <a href="certificates.html" class="active">เกียรติบัตร</a>
+        <a href="goals.html">เป้าหมาย</a>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <span>MY ACHIEVEMENTS 🏆</span>
+
+    <h1>เกียรติบัตรของฉัน 🎀</h1>
+
+    <p>
+        รวบรวมผลงานและเกียรติบัตร
+        ที่ได้รับจากการเรียนและกิจกรรม
+    </p>
+
+</section>
+
+
+<section class="certificate-section">
+
+    <div class="certificate-grid">
+
+
+        <div class="certificate-card"
+             onclick="showCertificate('images/certificate1.jpg')">
+
+            <div class="certificate-img">
+
+                <img src="images/certificate1.jpg">
+
+                <div class="zoom">
+                    🔍
+                </div>
+
+            </div>
+
+            <div class="certificate-info">
+
+                <span>Certificate 01</span>
+
+                <h3>ชื่อเกียรติบัตร</h3>
+
+                <p>ปีที่ได้รับ : 2569</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="certificate-card"
+             onclick="showCertificate('images/certificate2.jpg')">
+
+            <div class="certificate-img">
+
+                <img src="images/certificate2.jpg">
+
+                <div class="zoom">
+                    🔍
+                </div>
+
+            </div>
+
+            <div class="certificate-info">
+
+                <span>Certificate 02</span>
+
+                <h3>ชื่อเกียรติบัตร</h3>
+
+                <p>ปีที่ได้รับ : 2569</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="certificate-card"
+             onclick="showCertificate('images/certificate3.jpg')">
+
+            <div class="certificate-img">
+
+                <img src="images/certificate3.jpg">
+
+                <div class="zoom">
+                    🔍
+                </div>
+
+            </div>
+
+            <div class="certificate-info">
+
+                <span>Certificate 03</span>
+
+                <h3>ชื่อเกียรติบัตร</h3>
+
+                <p>ปีที่ได้รับ : 2569</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATE POPUP -->
+
+<div id="certificateModal" class="modal">
+
+    <div class="certificate-modal">
+
+        <button onclick="closeCertificate()" class="close">
+            ×
+        </button>
+
+        <img id="certificateLarge">
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>Made with 💗 by Yaowadee</p>
+</footer>
+
+
+<script>
+
+function showCertificate(image){
+
+    document.getElementById("certificateModal").style.display = "flex";
+
+    document.getElementById("certificateLarge").src = image;
+
+}
+
+function closeCertificate(){
+
+    document.getElementById("certificateModal").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
