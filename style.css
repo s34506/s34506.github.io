@@ -1070,5 +1070,65 @@ nav a.active::after {
     .contact-symbol {
         font-size: 65px;
     }
+/* =========================
+   ABOUT PHOTO - FIXED SIZE
+========================= */
 
+.about-photo {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+    background: var(--red);
+    box-shadow: 15px 15px 0 var(--light-gold);
+    text-align: center;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.photo-name {
+    padding: 18px 5px 5px;
+}
+
+.photo-name h2 {
+    color: white;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.photo-name p {
+    margin-top: 5px;
+    color: var(--light-gold);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   ABOUT MOBILE
+========================= */
+
+@media (max-width: 680px) {
+
+    .about-photo {
+        width: 260px;
+        max-width: 260px;
+        padding: 12px;
+    }
+
+    .about-photo img {
+        width: 220px;
+        height: 280px;
+    }
+
+}
 }
